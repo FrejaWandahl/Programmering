@@ -1,0 +1,102 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --sort: #1d1d24;
+  --white: #ffffff;
+  --hest: #94151b;
+
+  /* fonte */
+  --font: 'Raleway', sans-serif; /* brødtekst */
+  --displayH: 'Montserrat', cursive; /* overskrifter */
+
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --sort */
+body {
+  background-color: var(--sort);
+  font-family: var(--Raleway);
+  color: var(--white);
+
+
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--displayH);
+
+}
+
+#content {
+  display: flex;
+}
+
+aside {
+  width: 25%;
+  min.width: 500px;
+  max-width: 50%;
+  background-color: white;
+}
+
+
+main {
+  max-width: 500px;
+}
+
+/*-- Ændre link farve --*/
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ul{
+  list-style-type: none;
+}
+
+
+/* Layout: Flexbox */
+
+#content {
+  display: flex;
+}
+
+.butikFlex {
+  display:flex;
+}
+
+.vare {
+  margin: 8px;
+  padding-top: 34px;
+  padding-bottom: 2em;
+  background-color: var(--hest);
+  width: 50%;
+
+}
